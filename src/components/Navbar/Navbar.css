@@ -1,0 +1,75 @@
+.n-wrapper {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  top: 0;
+}
+.n-left {
+  flex: 1;
+  align-items: center;
+  justify-content: left;
+  display: flex;
+  gap: 2rem;
+}
+
+.n-name {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.n-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-weight: 400;
+}
+
+
+.n-list {
+  flex: 10;
+}
+.n-list > ul {
+  display: flex;
+  gap: 2rem;
+  margin-right: 0rem;
+}
+
+.n-list > ul :hover {
+  color: var(--roxo);
+  cursor: pointer;
+}
+
+.n-button {
+  flex: 2;
+}
+
+.i-icons  {
+  margin-top: 0rem !important; 
+  display: flex;
+  gap: 0rem;
+}
+.i-icons  > * {
+  transform: scale(0.5);
+  color: #8b008b;
+  border: transparent !important;
+  background: transparent !important;
+}
+.i-icons  > *:hover {
+  cursor: pointer;
+  color: blueviolet;
+}
+
+.App-logo-nav {
+  font-size: 60px !important;
+}
+
+@media screen and (max-width: 480px) {
+  .n-list {
+    display: none;
+  }
+
+  .App-logo-nav {
+    font-size: 60px !important;
+  }
+}

@@ -1,0 +1,44 @@
+:root
+{
+  --yellow: #9932cc;
+    --roxo : #8b008b;
+    --black : #242D49;
+    --gray : #788097;
+    --blueCard : #DDF8FE;
+    --purple: rgb(238 210 255);
+    --boxShadow : 0px 19px 60px rgb(0 0 0 / 8%);
+    --roxoCard: #8b008b;
+    --smboxShadow: -79px 51px 60px rgba(202, 17, 177, 0.08);
+}
+
+.App{
+    padding: 0.5rem 3.5rem;
+    overflow: hidden;
+    color: var(--black);    
+}
+
+.button {
+    background: linear-gradient(180deg, #9932cc 26.71%, #8b008b 99.36%);
+    border-radius: 34px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 11px 26px 11px 26px;
+  }
+  
+  .button:hover {
+    background: white;
+    cursor: pointer;
+    border: 1px solid var(--roxo);
+    color: var(--roxo);
+  }
+  @media screen and (max-width: 480px) {
+    .App {
+      padding: 0.5rem 1rem;
+
+    }
+  }
+
+  
+
+  

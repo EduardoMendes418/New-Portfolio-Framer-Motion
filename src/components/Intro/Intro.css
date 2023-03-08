@@ -1,0 +1,160 @@
+.Intro {
+  display: flex;
+  height: 77vh;
+  margin-top: 6rem;
+}
+
+.App-logo {
+  font-size: 80px !important;
+}
+
+/* left side styling */
+.i-left {
+  display: flex;
+  position: relative;
+  flex: 1;
+  flex-direction: column;
+  gap: 2rem;
+}
+.i-name {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.i-name > :nth-child(1) {
+  color: var(--black);
+  font-weight: bold;
+  font-size: 3rem;
+}
+.i-name > :nth-child(2) {
+  color: var(--roxo);
+  font-weight: bold;
+  font-size: 3rem;
+}
+.i-name > :nth-child(3) {
+  font-weight: 100;
+  font-size: 0.8rem;
+  color: var(--gray);
+  margin-top: 10px;
+  font-weight: normal;
+}
+.i-button {
+  width: 8rem;
+  height: 2rem;
+}
+.i-icons {
+  margin-top: 3rem;
+  display: flex;
+  gap: 0rem;
+}
+.i-icons > * {
+  transform: scale(0.5);
+  color: #8b008b;
+}
+.i-icons > *:hover {
+  cursor: pointer;
+  color: blueviolet;
+}
+/* right side styling */
+.i-right {
+  flex: 1;
+  position: relative;
+}
+.i-right > * {
+  position: absolute;
+  z-index: 0;
+}
+.i-right > :nth-child(1) {
+  transform: scale(0.69);
+  left: -15%;
+  top: -9%;
+}
+.i-right > :nth-child(2) {
+  top: -21rem;
+  transform: scale(0.67);
+  left: -15rem;
+}
+.i-right > :nth-child(3) {
+  transform: scale(1.4);
+  left: 25%;
+  top: 3.5rem;
+  width: 50%;
+    box-shadow: #8b008b;
+}
+.i-right > :nth-child(4) {
+  transform: scale(0.40);
+  top: -19%;
+  left: -24%;
+  padding: 0;
+}
+
+/* blur */
+.blur {
+  position: absolute;
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  background: #edd0ff;
+  filter: blur(212px);
+  z-index: -9;
+  top: -18%;
+  left: 56%;
+  filter: blur(72px);
+}
+
+
+
+@media screen and (max-width: 480px) {
+  .Intro {
+      flex-direction: column;
+      gap: 3rem;
+      height: 55rem;
+  }
+
+  .i-right {
+    transform: scale(0.8);
+    left: -3rem;
+  }
+  .i-right .blur {
+    display: none;
+  }
+  .floating-div:nth-of-type(1){
+    /* display: none; */
+    top: -7rem !important;;
+  }
+
+  .i-right > :nth-child(3) {
+    transform: scale(1.4);
+      left: 40%;
+      top: 6.5rem;
+      width: 70%;
+  }
+
+  .boneco{
+    display: none;
+  }
+
+
+.i-name > :nth-child(2) {
+  color: var(--roxo);
+  font-weight: bold;
+  font-size: 2.3rem;
+}
+
+.i-left {
+  display: flex;
+  position: relative;
+  flex: 1;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.i-icons {
+ margin: auto;
+}
+
+.floatingDiv {
+  margin-top: 50px;
+}
+
+}
